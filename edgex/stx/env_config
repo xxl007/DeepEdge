@@ -1,0 +1,3 @@
+INTEL_CVSDK_DIR=/opt/intel/computer_vision_sdk
+TARGET=MYRIAD
+INPUT_STREAM=http://10.239.154.44:49990

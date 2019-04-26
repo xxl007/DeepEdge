@@ -1,0 +1,10 @@
+# build my cv-python2 docker image
+docker build -t local/cv-py2-image:0.1 -f ./Dockerfile .
+
+# create my container with my image
+export LOCAL_DIR=/home/ec/workspace/stx-demo/
+export REMOTE_DIR=/opt
+export CV_IMG=local/cv-py2-image:0.1
+docker run -it --rm --name ${CV_CONTAINER_NAME} --detach -p ${CV_PORT}:8888 -v ${CV_LOCAL_DIR}:${CV_REMOTE_DIR} ${CV_IMG} bash
+
+

@@ -1,0 +1,5 @@
+export CV_LOCAL_DIR=`pwd`
+export CV_REMOTE_DIR=/cvopt
+export CV_IMG=local/cv-py2-image:0.3
+export CV_PORT=8888
+export CV_CONTAINER_NAME=cv-container-0.3
